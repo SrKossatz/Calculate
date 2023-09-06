@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script defer src="index.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <p class="dial" id="dial"></p>
+        <table>
+          <tr>
+            <td colspan="2"><button onclick="clean()" class="special ac">AC</button></td>
+            <td><button onclick="backspace()"><i class="ph-light ph-backspace backspace"></i></button></td>
+            <td><button onclick="insert('/')" class="special"><i class="ph-light ph-divide"></i></button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('7')">7</button></td>
+            <td><button onclick="insert('8')">8</button></td>
+            <td><button onclick="insert('9')">9</button></td>
+            <td><button onclick="insert('*')" class="special">x</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('4')">4</button></td>
+            <td><button onclick="insert('5')">5</button></td>
+            <td><button onclick="insert('6')">6</button></td>
+            <td><button onclick="insert('-')" class="special">-</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('1')">1</button></td>
+            <td><button onclick="insert('2')">2</button></td>
+            <td><button onclick="insert('3')">3</button></td>
+            <td><button onclick="insert('+')" class="special">+</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('0')">0</button></td>
+            <td><button onclick="insert('.')">.</button></td>
+            <td colspan="2"><button onclick="calculate()" class="special confirm">=</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
